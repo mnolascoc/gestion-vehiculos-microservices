@@ -1,0 +1,10 @@
+package com.coremei.auto.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.coremei.auto.entity.Auto;
+
+public interface AutoRepository extends JpaRepository<Auto, Integer> {
+	
+	List<Auto> findByUsuario(int usuarioId);
+}

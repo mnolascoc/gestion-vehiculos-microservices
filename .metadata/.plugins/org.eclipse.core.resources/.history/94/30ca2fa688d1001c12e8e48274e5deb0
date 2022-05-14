@@ -1,0 +1,8 @@
+package com.coremei.auto.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Auto {
+
+}

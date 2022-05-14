@@ -1,0 +1,5 @@
+package com.coremei.usuario.service.clients;
+
+public interface MotoFeignClient {
+
+}

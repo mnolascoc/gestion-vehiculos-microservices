@@ -1,0 +1,16 @@
+package com.coremei.usuario.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Usuario {
+	
+	@Id
+	private Integer id;
+	private String nombre;
+	private String correo;
+	
+	
+	
+}

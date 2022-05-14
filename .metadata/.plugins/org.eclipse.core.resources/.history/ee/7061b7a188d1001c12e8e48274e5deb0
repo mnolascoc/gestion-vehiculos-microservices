@@ -1,0 +1,5 @@
+package com.coremei.auto.entity;
+
+public class Auto {
+
+}

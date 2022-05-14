@@ -1,0 +1,5 @@
+package com.coremei.usuario.repository;
+
+public class UsuarioRepository {
+
+}

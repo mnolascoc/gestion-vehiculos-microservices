@@ -1,0 +1,5 @@
+package com.coremei.usuario.controller;
+
+public class UsuarioController {
+
+}

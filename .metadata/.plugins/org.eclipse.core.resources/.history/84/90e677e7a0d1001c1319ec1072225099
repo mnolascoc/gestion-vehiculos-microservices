@@ -1,0 +1,32 @@
+package com.coremei.moto.service;
+
+import java.util.List;
+
+import com.coremei.moto.entity.Moto;
+import com.coremei.moto.repository.MotoRepository;
+
+public class MotoService {
+	
+	private MotoRepository motoRepository;
+
+	public MotoService(MotoRepository motoRepository) {
+		this.motoRepository = motoRepository;
+	}
+	
+	public List<Moto> getAll(){
+		return motoRepository.findAll();
+	}
+	
+	public Auto getAutoById(Integer id) {
+		return motoRepository.findById(id).orElse(null);
+	}
+	
+	public List<Auto> getAutoByUsuario(Integer usuarioId) {
+		return motoRepository.findByUsuarioId(usuarioId);
+	}
+	
+	public Auto save(Auto auto) {
+		return motoRepository.save(auto);
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.coremei.usuario.model;
+
+public class Auto {
+
+}

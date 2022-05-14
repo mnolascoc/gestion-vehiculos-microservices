@@ -1,0 +1,5 @@
+package com.coremei.auto.repository;
+
+public interface AutoRepository {
+
+}

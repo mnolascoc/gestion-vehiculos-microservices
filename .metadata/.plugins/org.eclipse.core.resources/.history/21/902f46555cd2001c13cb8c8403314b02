@@ -1,0 +1,7 @@
+package com.coremei.usuario.model;
+
+public class Moto {
+	
+	private String marca;
+	private String modelo;
+}

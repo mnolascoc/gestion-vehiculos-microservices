@@ -1,0 +1,14 @@
+package com.coremei.moto.entity;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+public class Moto {
+	
+	private Integer id;
+}

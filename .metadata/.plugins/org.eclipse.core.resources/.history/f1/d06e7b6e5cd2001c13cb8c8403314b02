@@ -1,0 +1,8 @@
+package com.coremei.usuario.model;
+
+
+public class Auto {
+	
+	private String marca;
+	private String modelo;
+}

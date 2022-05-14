@@ -1,0 +1,7 @@
+
+p	java:S1067"9Replace this use of System.out or System.err by a logger.(ªÙùÿÿÿÿ8ù”ŠÙ‹0HRMAJORZ
+CODE_SMELL
+~
+java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(”ÃÍ§ıÿÿÿÿ8¨ĞÏ¬‹0HôRCRITICALZVULNERABILITY
+k	java:S106<"9Replace this use of System.out or System.err by a logger.(‚ƒ¦·8ã‹Ù‹0HRMAJORZ
+CODE_SMELL

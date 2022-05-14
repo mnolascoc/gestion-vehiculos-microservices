@@ -1,0 +1,58 @@
+package com.coremei.usuario.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.coremei.usuario.entity.Usuario;
+import com.coremei.usuario.model.Auto;
+import com.coremei.usuario.model.Moto;
+import com.coremei.usuario.repository.UsuarioRepository;
+import com.coremei.usuario.service.clients.AutoFeignClient;
+
+@Service
+public class UsuarioService {
+
+	private UsuarioRepository usuarioRepository;
+	private RestTemplate restTemplate;
+	private AutoFeignClient autoFeignClient;
+
+	public UsuarioService(UsuarioRepository usuarioRepository, RestTemplate restTemplate,
+			AutoFeignClient autoFeignClient) {
+		this.usuarioRepository = usuarioRepository;
+		this.restTemplate = restTemplate;
+		this.autoFeignClient = autoFeignClient;
+	}
+
+	public List<Auto> getAllAutos(Integer usuarioId) {
+		return restTemplate.getForObject("http://localhost:8081/api/autos/usuario/" + usuarioId, List.class);
+	}
+
+	public List<Moto> getAllMotos(Integer usuarioId) {
+		return restTemplate.getForObject("http://localhost:8081/api/motos/usuario/" + usuarioId, List.class);
+	}
+
+	public Auto save(Integer usuarioId, Auto auto) {
+		auto.setUsuarioId(usuarioId);
+		return autoFeignClient.save(auto);
+	}
+	
+	public Auto saveMoto(Integer usuarioId, Moto moto) {
+		moto.setUsuarioId(usuarioId);
+		return autoFeignClient.save(auto);
+	}
+
+	public List<Usuario> getAll() {
+		return usuarioRepository.findAll();
+	}
+
+	public Usuario getUsuarioById(Integer id) {
+		return usuarioRepository.findById(id).orElse(null);
+	}
+
+	public Usuario save(Usuario usuario) {
+		return usuarioRepository.save(usuario);
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.coremei.usuario.service.clients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "auto-service", url = "http://localhost:8081")
+public interface AutoFeignClient {
+
+}

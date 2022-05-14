@@ -1,0 +1,9 @@
+package com.coremei.auto.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AutoService {
+	
+	private AutoRepository autoRepository;
+}
