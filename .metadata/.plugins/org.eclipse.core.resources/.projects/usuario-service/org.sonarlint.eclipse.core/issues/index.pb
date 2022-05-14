@@ -5,8 +5,6 @@ s
 Csrc/main/java/com/coremei/usuario/repository/UsuarioRepository.java,4\e\4e0ca415fccff51073774124fa0e415b5c18ff52
 e
 5src/main/java/com/coremei/usuario/entity/Usuario.java,3\c\3c7505556adf53dca74940e3700eeb76d437edf4
-Y
-)src/main/resources/application.properties,0\6\06f65155ec73600b9fc5c4dc2883d4bb84d8e284
 m
 =src/main/java/com/coremei/usuario/service/UsuarioService.java,c\1\c1b7ae6fe88261b5bdff66352b04a8124cfde8cd
 s
@@ -23,3 +21,5 @@ v
 Fsrc/main/java/com/coremei/usuario/service/clients/AutoFeignClient.java,6\5\65a5e5c89584939d05e810e81f3b78adc6a4ea02
 v
 Fsrc/main/java/com/coremei/usuario/service/clients/MotoFeignClient.java,6\4\64d083fc175970e4e9069581b602369ae77ac013
+Q
+!src/main/resources/bootstrap.yaml,7\7\77de0e7e673f75a9f89905be4ab7f6beb79a533c
