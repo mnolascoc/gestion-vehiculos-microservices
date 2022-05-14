@@ -11,3 +11,5 @@ _
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Q
 !src/main/resources/bootstrap.yaml,7\7\77de0e7e673f75a9f89905be4ab7f6beb79a533c
+j
+:src/main/java/com/coremei/auto/AutoServiceApplication.java,3\5\352fdb387423324f0b95ad74abf8cfbe5477563a
